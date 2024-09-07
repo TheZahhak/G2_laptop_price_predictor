@@ -4,9 +4,12 @@ import numpy as np
 import pickle
 from sklearn.preprocessing import StandardScaler
 
-# Cargar el modelo entrenado
-with open('ml_price_laptop.pkl', 'mae_rm') as file:
+# Cargar el modelo y el escalador
+with open('ml_price_laptop.pkl', 'rb') as file:
     modelo = pickle.load(file)
+
+with open('scaler.pkl', 'rb') as file:
+    scaler = pickle.load(file)
 
 # Definir la interfaz de usuario en Streamlit
 st.title('Predicción de Precios de Laptops')
@@ -32,7 +35,7 @@ if st.button('Predecir Precio'):
 
     # Estandarización de las características
     scaler = StandardScaler()
-    input_scaled = scaler.fit_transform(input_data)
+    input_scaled = scaler.transform(input_data)
 
     # Realizar predicción
     prediction = modelo.predict(input_scaled)
