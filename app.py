@@ -8,6 +8,9 @@ from sklearn.preprocessing import StandardScaler
 with open('ml_price_laptop.pkl', 'rb') as file:
     modelo = pickle.load(file)
 
+scaler = StandardScaler()
+input_scaled = scaler.transform(input_data)
+
 #with open('scaler.pkl', 'rb') as file:
 #    scaler = pickle.load(file)
 
