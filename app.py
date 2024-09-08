@@ -26,9 +26,9 @@ screen_width = st.number_input('Ancho de Pantalla', min_value=800, max_value=400
 
 # Botón para realizar predicción
 if st.button('Predecir Precio'):
-    # Crear DataFrame con las nuevas entradas
-    input_data = pd.DataFrame([[ram, screen_width, screen_height, ssd, ghz, type_gaming, type_notebook]],
-                              columns=['Ram', 'screen_width', 'screen_height', 'SSD', 'GHz', 'TypeName_Gaming', 'TypeName_Notebook'])
+    # Crear DataFrame con las entradas (sin screen_height)
+    input_data = pd.DataFrame([[ram, ssd, ghz, screen_width]],
+                          columns=['Ram', 'SSD', 'GHz', 'screen_width'])
 
     # Estandarización de las características (ya con el scaler previamente entrenado)
     input_scaled = scaler.transform(input_data)
