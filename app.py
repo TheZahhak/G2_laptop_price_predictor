@@ -43,6 +43,3 @@ if st.button('Predecir Precio'):
 
     # Mostrar predicción
     st.write(f'Precio predecido: {prediction[0]:.2f} euros')
-
-    # Mostrar predicción
-    st.write(f'Precio predecido: {prediction[0]:.2f} euros')
