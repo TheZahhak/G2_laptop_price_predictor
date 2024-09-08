@@ -18,7 +18,7 @@ ghz = st.number_input('GHz del CPU', min_value=0.1, max_value=5.0, value=2.5)
 ram = st.number_input('RAM (GB)', min_value=1, max_value=64, value=8)
 screen_width = st.number_input('Ancho de Pantalla', min_value=800, max_value=4000, value=1920)
 screen_height = st.number_input('Alto de Pantalla', min_value=600, max_value=3000, value=1080)
-inches = st.number_input('Inches (GB)', min_value=10.5, max_value=20.5, value=13.3)
+#inches = st.number_input('Inches (GB)', min_value=10.5, max_value=20.5, value=13.3)
 
 type_gaming = st.selectbox('¿Es Gaming?', ['No', 'Sí'])
 type_notebook = st.selectbox('¿Es Notebook?', ['No', 'Sí'])
