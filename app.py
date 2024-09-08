@@ -8,9 +8,6 @@ from sklearn.preprocessing import StandardScaler
 with open('ml_price_laptop.pkl', 'rb') as file:
     modelo = pickle.load(file)
 
-#with open('scaler.pkl', 'rb') as file:
-#    scaler = pickle.load(file)
-
 # Definir la interfaz de usuario en Streamlit
 st.title('Predicción de Precios de Laptops')
 
