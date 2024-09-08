@@ -6,9 +6,9 @@ import joblib
 from sklearn.preprocessing import StandardScaler
 
 # Cargar el modelo entrenado
-#with open('modelo_opt_rf_m.pkl', 'rb') as file:
+#with open('ml_price_laptop', 'rb') as file:
 #    #modelo = pickle.load(file)
-modelo = joblib.load('modelo_opt_rf_m.pkl')
+modelo = joblib.load('ml_price_laptop.pkl')
 # Definir la interfaz de usuario en Streamlit
 st.title('Predicción de Precios de Laptops')
 
