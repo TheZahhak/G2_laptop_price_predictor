@@ -18,8 +18,8 @@ ghz = st.number_input('GHz del CPU', min_value=0.1, max_value=5.0, value=2.5)
 screen_width = st.number_input('Ancho de Pantalla', min_value=800, max_value=4000, value=1920)
 
 # Convertir entradas a formato numérico
-type_gaming = 1 if type_gaming == 'Sí' else 0
-type_notebook = 1 if type_notebook == 'Sí' else 0
+#type_gaming = 1 if type_gaming == 'Sí' else 0
+#type_notebook = 1 if type_notebook == 'Sí' else 0
 
 # Botón para realizar predicción
 if st.button('Predecir Precio'):
